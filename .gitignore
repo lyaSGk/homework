@@ -1,38 +1,55 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Miscellaneous
+*.java.hsp
+*.sonarj
+*.sw*
+.DS_Store
+build.sh
+integration-repo
+ivy-cache
+argfile*
+activemq-data/
+classes/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
-*.iml
-*.ipr
+# Log files
+jxl.log
+jmx.log
+derby.log
 
-### Eclipse ###
-.apt_generated
+# Gradle artifacts
+.gradle
+.gradletasknamecache
+/build
+buildSrc/build
+/spring-*/build
+/framework-*/build
+/integration-tests/build
+/src/asciidoc/build
+spring-test/test-output/
+.idea
+
+# Maven artifacts
+/target/
+
+# Eclipse artifacts, including WTP generated manifests
+bin
 .classpath
-.factorypath
 .project
 .settings
 .springBeans
-.sts4-cache
+spring-*/src/main/java/META-INF/MANIFEST.MF
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# IDEA artifacts and output dirs
+*.iml
+*.ipr
+*.iws
+.idea
+out
+test-output
+atlassian-ide-plugin.xml
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Mac OS ###
-.DS_Store
+cached-antora-playbook.yml
+
+node_modules
